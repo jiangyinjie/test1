@@ -3,12 +3,7 @@ pipeline {
         label 'master'
     }
     stages {
-        
-        stage('Build') {            
-            steps {                
-                git credentialsId: '9fb25843-b4e1-4bbd-87e0-180bde56d5e0', url: 'http://10.186.122.166/jiangyinjie/test.git'
-            }        
-        }        
+              
         stage('Test') {            
             steps {                
                 echo 'Testing'            
